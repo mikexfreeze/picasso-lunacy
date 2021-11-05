@@ -2,11 +2,12 @@ import sketch from 'sketch';
 import UI from 'sketch/ui';
 import Promise from '@skpm/promise';
 import fs from '@skpm/fs';
-import { picassoArtboardCodeParse, picassoArtboardOperationCodeParse } from '@wubafe/picasso-parse';
+// import { picassoArtboardOperationCodeParse } from '@wubafe/picasso-parse';
+// import { picassoArtboardCodeParse, picassoArtboardOperationCodeParse } from '@wubafe/picasso-parse';
 import handleWebCode from './handleCode/handleWebCode';
-import handleWeappCode from './handleCode/handleWeappCode';
-import handleRNCode from './handleCode/handleRNCode';
-import getImageLayers from './getImageLayers';
+// import handleWeappCode from './handleCode/handleWeappCode';
+// import handleRNCode from './handleCode/handleRNCode';
+// import getImageLayers from './getImageLayers';
 
 /**
  * 画板解析
@@ -14,6 +15,8 @@ import getImageLayers from './getImageLayers';
  *
  */
 export const parseArtboard = (artboardItem,codeType, progressSlice, getProgress, rootPath) => new Promise((resolve, reject) => {
+    resolve(1)
+    return ''
     // 未解析，则走解析流程
     const symbolInstanceIds = [];
     // 字体存储
